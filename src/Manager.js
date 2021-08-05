@@ -63,7 +63,7 @@ class GiveawaysManager extends EventEmitter {
         embed
             .setAuthor(giveaway.prize)
             .setColor(lastChanceEnabled ? giveaway.lastChance.embedColor : giveaway.embedColor)
-            .setFooter(`${giveaway.winnerCount} ${giveaway.messages.winners} • ${giveaway.messages.embedFooter}`)
+            .setFooter(`${giveaway.messages.embedFooter}`)
             .setDescription(
                 (lastChanceEnabled ? giveaway.lastChance.content + '\n\n' : '') +
                 giveaway.messages.inviteToParticipate +
